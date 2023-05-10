@@ -1,0 +1,284 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  font-family: "Baloo Tamma 2", cursive;
+}
+/* div {
+  border: 2px solid red;
+} */
+#main_container {
+  box-sizing: border-box;
+}
+
+/* First Head Part  */
+
+#first_head {
+  text-align: center;
+  height: 700px;
+  text-shadow: 2px 2px 2px gray;
+}
+#first_head::before {
+  content: "";
+  background: url("../img/headbg.jpg") no-repeat
+    center center/cover;
+  position: absolute;
+  height: 96%;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+  opacity: 0.9;
+}
+
+#first_head p {
+  display: inline-block;
+  font-size: 60px;
+}
+#first_head .bigh {
+  font-size: 80px;
+}
+#first_head :nth-child(3) {
+  display: block;
+}
+
+/* Second Head Part */
+#second_head {
+  background-color: rgb(23, 26, 44);
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px rgb(250, 196, 255);
+}
+#second_head #black1 {
+  display: inline-block;
+  font-size: 80px;
+}
+#second_head #black2 {
+  display: inline-block;
+  font-size: 140px;
+}
+
+/* Mid Box Part */
+
+#mid {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 20px;
+}
+#mid img {
+  width: 400px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+#mid .img {
+  height: 337px;
+}
+
+#mid .box {
+  width: 400px;
+  height: 620px;
+  border: 2px solid black;
+  border-radius: 25px;
+  box-shadow: 5px 5px 5px gray;
+  transition: all 1s;
+}
+#mid .box:hover {
+  scale: 1.1;
+  box-shadow: 10px 10px 50px 5px rgb(75, 72, 72);
+}
+#mid h3,
+#mid p {
+  padding: 15px;
+  text-align: justify;
+}
+#mid h3 {
+  font-size: 30px;
+  text-align: center;
+  text-shadow: 2px 2px lightgrey;
+}
+
+/* Contact Part */
+#contact {
+  display: flex;
+  margin-top: 30px;
+  color: white;
+}
+#contact .contact {
+  width: 755px;
+  padding: 30px 60px;
+  text-align: justify;
+}
+
+.contact p {
+  margin-top: 20px;
+}
+.contact h3 {
+  font-size: 40px;
+}
+
+#contact #contact_me {
+  background-color: rgb(29, 96, 29);
+}
+#contact #about_me {
+  background-color: rgb(34, 34, 96);
+}
+
+/* footer Part  */
+footer {
+  background-color: black;
+  color: gold;
+  transition: all 2s;
+  text-align: center;
+  transition: all 2s;
+  animation: foot 10s infinite;
+}
+
+@keyframes foot {
+  0% {
+    background-color: rgb(170, 156, 156);
+  }
+  20% {
+    background-color: rgb(12, 165, 12);
+  }
+  40% {
+    background-color: rgb(165, 26, 26);
+  }
+  80% {
+    background-color: rgb(29, 21, 21);
+  }
+  100% {
+    background-color: rgb(145, 110, 110);
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  /* First Head Part  */
+  #first_head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 375%;
+  }
+
+  #first_head::before {
+    content: "";
+    height: 96%;
+    width: 375%;
+  }
+
+  #first_head p {
+    display: inline-block;
+    font-size: 50px;
+  }
+  #first_head .bigh {
+    font-size: 70px;
+  }
+
+  /* Second Head Part */
+  #second_head {
+    width: 375%;
+  }
+
+  #second_head #black1 {
+    display: inline-block;
+    font-size: 60px;
+  }
+  #second_head #black2 {
+    display: inline-block;
+    font-size: 80px;
+  }
+
+  /* Mid Box Part */
+  #mid {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* border: 2px solid red; */
+    width: 360%;
+  }
+  #mid img {
+    width: 800px;
+     }
+  #mid .img {
+    height: 600px;
+  }
+
+  #mid .box {
+    width: 800px;
+    height: 1000px;
+    font-size: 28px;
+      }
+
+  /* Contact Part */
+  #contact {
+    display: flex;
+    flex-direction: column;
+    font-size: 28px;
+  }
+  #contact .contact {
+    width: 1000px;
+  }
+
+  /* footer Part  */
+  footer {
+    width: 375%;
+  }
+}
+
+@media (min-width: 500px) and (max-width:1200px) {
+  /* First Head Part  */
+
+  #first_head{
+    display: flex;
+    width: 75rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #first_head::before {
+    content: "";
+    height: 44rem;
+    width: 75rem;
+  }
+
+  /* Second Head Part  */
+  #second_head{
+    width: 74rem;
+    padding: 10px;
+  }
+
+  /* Mid Part  */
+
+  #mid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 75rem;
+    font-size: 1.7rem;
+  }
+  #mid img{
+    width: 50rem;
+  }
+  #mid .img{
+    height: 600px;
+  }
+
+  #mid .box{
+    width: 50rem;
+    height: 60rem;
+  }
+
+  /* contact Part */
+
+  #contact{
+    width: 75rem;
+    margin: 0px;
+  }
+
+  footer{
+    width: 75rem;
+  }
+ 
+}
